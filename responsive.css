@@ -1,144 +1,165 @@
-* {
-  box-sizing: border-box;
+.content {
+  	display: flex;
+  	flex-wrap: wrap;
+    max-width: 100%;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 450px) {
+  .header{
+    order: 1;
+  }
+  .hr_line{
+    margin-top: 5px;
+  }
+  .header_title {
+    font-size: 1.5em;
+    margin-right: 5px;
+  }
+  .header_logo {
+    margin: 2px;
+    height: 30px;
+  }
+  .title_info{
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+  .main_description {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 1em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  .main_content {
+    order: 2;
+  }
+  .featured_work{
+    order: 3;
+  }
+  .feature{
+    text-align:center;
+  }
+
+  #images {
+    text-align:center;
+  }
+  img.img{
+    max-width: 50%;
+  }
+  div.caption {
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+  }
+  footer {
+    order: 4;
+    text-align:center;
+    margin:20px auto; 
+  }
 }
 
-body {
-  font-family: georgia;
-  	font-size: 14px;
-  color: #2d3c49;
+@media screen and (min-width: 450px) and (max-width: 850px) {
+
+  .header_data {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header_logo {
+    margin: 10px 0 0 10px;
+    height: 72px;
+    max-width: 72px;
+  }
+  .header_title {
+    padding: 10px 10px 0 0;
+  }
+  .title_info {
+    padding: 10px 10px 0 0;  
+  }
+
+  .feature{
+    text-align:center;
+  }
+
+  #images {
+    text-align:center;
+  }
+  img.img{
+    max-width: 50%;
+  }
+  div.caption {
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+  }
+
+  footer{
+    max-width: 100%;
+  }
+
+  footer li{
+    max-width: 25%;
+    display: inline-block;
+  }
 }
 
-h1, h2, h3, h4 {
-  margin: 0; 
+@media screen and (min-width: 851px) {
+  main, .header, .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header_title {
+    font-size: 3em;
+    margin: 0.25em 30px 0 30px;
+  }
+
+  .header_logo {
+    margin-top: 12px;
+    margin-left: 30px;
+    height: 72px;
+    width: 72px;
+  }
+  
+  .title_info {
+    margin: 0.25em 30px;
+  }
+
+  .main_description{
+    padding-top: 1.5em;
+    margin-left: 3em;
+  }
+
+  .feature{
+    margin-left: 2.5em;
+  }
+
+  #images {
+    text-align:center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+  a.a {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+  }
+  img.img{
+    max-width: 33%;
+  }
 
-main {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*
-*
-Header
-*
-*/
-
-.header {
-  min-height: 56px;
-  transition: min-height 0.3s;
-}
-
-.header_logo {
-  vertical-align: top;
-  background-color: #02b3e4;
-}
-
-.header_title {
-	font-weight: 300;
-  color: #2d3c49;
-  float: right;
-}
-
-.title_info {
-	text-transform: uppercase;
-	font-weight: 100;
-  font-size: 1em;
-  color: #2d3c49;
-  float: right;
-  clear: right;
-}
-
-.hr_line {
- 	border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(125, 151, 173, 1), rgba(0, 0, 0, 0));
-}
-
-/*
-*
-Main Content
-*
-*/
-
-.main_content {
-	max-width: 100%;
-	box-sizing: border-box;
-}
-
-.image {
-	max-width: 100%;
-	box-sizing: border-box;
-	padding: 1em;
-  	position: relative;
-}
-
-.main_description{
-	max-width: 100%;
-	font-size: 14px;
-	padding-top: 1.5em;
-	margin-left: 1.75em;
-  color: #2d3c49;
-	overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/*
-*
-Featured Work
-*
-*/
-
-.featured_work{
-  max-width: 100%;
-}
-
-#images a{
-  text-decoration:none;
+  img {
+    margin-bottom: 10px;
+    text-decoration:none;
+    color: black;
  }
+  
+  footer{
+    max-width: 100%;
+  }
 
-h3.feature {
-  padding: 1em 0;
-}
-
-img {
-	box-sizing: border-box;
-}
-
-.feature{
-	color: #7d97ad;
-} 
-
-
-/*
-*
-Footer
-*
-*/
-
-
-footer {
-  text-align: center;
-}
-
-footer li {
-  margin: 0 1em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #2d3c49;
+  footer li{
+    max-width: 25%;
+    display: inline-block;
+  }
 }
