@@ -115,9 +115,7 @@ h3.feature {
 }
 
 img {
-	max-width: 33%;
 	box-sizing: border-box;
-
 }
 
 .feature{
@@ -133,7 +131,6 @@ Footer
 
 
 footer {
-  width: 100%;
   text-align: center;
 }
 
@@ -144,5 +141,4 @@ footer li {
 footer a {
   text-decoration: none;
   color: #2d3c49;
-  padding: 1.5em;
 }
