@@ -1,44 +1,54 @@
 .content {
-  	display: flex;
-  	flex-wrap: wrap;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 450px) {
-  .header{
+  .page_header{
     order: 1;
   }
+
   .hr_line{
     margin-top: 5px;
   }
+
   .header_title {
     font-size: 1.5em;
     margin-right: 5px;
+    margin-top: 10px;
   }
+
   .header_logo {
     margin: 2px;
-    height: 30px;
+    height: 50px;
   }
+
   .title_info{
     font-size: 0.8em;
     margin-right: 5px;
+    position: relative;
   }
+
   .main_description {
     width: 100%;
     margin: 0;
-    padding: 0 0 0 1em;
+    padding: 0 1em 0 1em;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
   }
+
   .main_content {
     order: 2;
   }
-  .featured_work{
+
+  .featured_work {
     order: 3;
   }
-  .feature{
+
+  .feature {
     text-align:center;
   }
 
@@ -46,29 +56,30 @@
     text-align:center;
   }
 
-  img.img{
+  img.feature_img {
     max-width: 50%;
     display: inline;
   }
 
-  .images{
+  .ul_images {
     display: inline-block;
   }
+
   div.caption {
     font-size: 16px;
     padding: 10px 0 20px 0;
   }
+
   footer {
     order: 4;
     text-align:center;
-    margin:20px auto; 
+    margin:20px auto;
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 890px) {
+@media screen and (min-width: 451px) and (max-width: 890px) {
 
   .header_data {
-    max-width: 100%;
     overflow: hidden;
   }
 
@@ -77,14 +88,16 @@
     height: 72px;
     max-width: 72px;
   }
+
   .header_title {
     padding: 10px 10px 0 0;
   }
+
   .title_info {
-    padding: 10px 10px 0 0;  
+    padding: 10px 10px 0 0;
   }
 
-  .feature{
+  .feature {
     text-align:center;
   }
 
@@ -92,7 +105,7 @@
     text-align:center;
   }
 
-img.img{
+  img.feature_img {
     max-width: 100%;
     min-width: 50%;
   }
@@ -102,18 +115,18 @@ img.img{
     padding: 10px 0 20px 0;
   }
 
-  footer{
+  footer {
     max-width: 100%;
   }
 
-  footer li{
+  footer li {
     max-width: 25%;
     display: inline-block;
   }
 }
 
 @media screen and (min-width: 891px) {
-  main, .header, .content {
+  main, .page_header, .content {
     width: 870px;
     margin-left: auto;
     margin-right: auto;
@@ -135,12 +148,12 @@ img.img{
     margin: 0.25em 30px;
   }
 
-  .main_description{
+  .main_description {
     padding-top: 1.5em;
     margin-left: 3em;
   }
 
-  .feature{
+  .feature {
     margin-left: 2.5em;
   }
 
@@ -148,26 +161,26 @@ img.img{
     text-align:center;
   }
 
-  img.img{
+  img.feature_img {
     max-width: 100%;
     min-width: 40%;
   }
-  #images a{
+  #images a {
     max-width: 100%;
   }
+
   img {
     margin-bottom: 10px;
     text-decoration:none;
     color: black;
  }
   
-  footer{
+  footer {
     max-width: 100%;
   }
 
-  footer li{
+  footer li {
     max-width: 25%;
     display: inline-block;
   }
-
 }
