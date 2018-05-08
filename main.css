@@ -40,7 +40,7 @@ Header
 .page_header {
   min-height: 40px;
   transition: min-height 0.3s;
-}
+} 
 
 .header_logo {
   vertical-align: top;
