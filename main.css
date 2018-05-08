@@ -95,6 +95,9 @@ Main Content
 	overflow: hidden;
   text-overflow: ellipsis;
 }
+.images {
+  display: flex;
+}
 
 /*
 *
@@ -104,6 +107,7 @@ Featured Work
 
 .featured_work{
   max-width: 100%;
+  margin-bottom: 3em;
 }
 
 #images a{
@@ -132,6 +136,7 @@ Footer
 
 footer {
   text-align: center;
+  padding-top: 1em;
 }
 
 footer li {
