@@ -10,7 +10,7 @@
   }
 
   .hr_line{
-    margin-top: 25px;
+    margin-top: 10px;
   }
 
   .header_title {
@@ -86,8 +86,8 @@
   }
 
   .header_logo {
-    margin: 10px 0 0 10px;
-    max-width: 72px;
+    margin-top: 10px;
+    height: 50px;
   }
 
   .header_title {
@@ -96,10 +96,11 @@
 
   .title_info {
     margin: 10px 10px 0 0;
+    position: relative;
   }
 
   .hr_line{
-    margin-top: 25px;
+    margin-top: 10px;
   }
 
   .feature {
