@@ -38,7 +38,7 @@ Header
 */
 
 .page_header {
-  min-height: 56px;
+  min-height: 40px;
   transition: min-height 0.3s;
 }
 
