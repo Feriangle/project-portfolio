@@ -10,7 +10,7 @@
   }
 
   .hr_line{
-    margin-top: 5px;
+    margin-top: 25px;
   }
 
   .header_title {
@@ -81,11 +81,12 @@
 
   .header_data {
     overflow: hidden;
+    padding-bottom: 5px;
+    min-height: 80px;
   }
 
   .header_logo {
     margin: 10px 0 0 10px;
-    height: 72px;
     max-width: 72px;
   }
 
@@ -94,7 +95,11 @@
   }
 
   .title_info {
-    padding: 10px 10px 0 0;
+    margin: 10px 10px 0 0;
+  }
+
+  .hr_line{
+    margin-top: 25px;
   }
 
   .feature {
