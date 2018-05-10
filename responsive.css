@@ -5,29 +5,39 @@
 }
 
 @media screen and (max-width: 450px) {
+
   .page_header{
     order: 1;
   }
 
-  .hr_line{
-    margin-top: 10px;
+  .header_data {
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .header_title {
     font-size: 1.5em;
-    margin-right: 5px;
-    margin-top: 10px;
   }
 
   .header_logo {
-    margin: 2px;
-    height: 50px;
+    margin: auto 0;
+    width: 30%;
+  }
+
+  .logo_img{
+    display: block;
+    margin: auto 0;
+    width: 50%;
+  }
+
+  .header_texts {
+    padding: 1em 1.5em;
+    width: 70%;
+
   }
 
   .title_info{
     font-size: 0.8em;
-    margin-right: 5px;
-    position: relative;
   }
 
   .main_description {
@@ -52,68 +62,57 @@
     text-align:center;
   }
 
-  #images {
-    text-align:center;
-  }
-
   img.feature_img {
     max-width: 50%;
     display: inline;
   }
 
   .ul_images {
-    display: inline-block;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
   }
 
   div.caption {
     font-size: 16px;
     padding: 10px 0 20px 0;
   }
-
-  footer {
-    order: 4;
-    text-align:center;
-    margin:20px auto;
-  }
 }
 
 @media screen and (min-width: 451px) and (max-width: 890px) {
 
   .header_data {
-    overflow: hidden;
-    padding-bottom: 5px;
-    min-height: 80px;
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .header_logo {
-    margin-top: 10px;
-    height: 50px;
+    margin: auto 0;
+    width: 30%;
   }
 
-  .header_title {
-    padding: 10px 10px 0 0;
+  .logo_img {
+    display: block;
+    margin: auto 0;
+    width: 50%;
   }
 
-  .title_info {
-    margin: 10px 10px 0 0;
-    position: relative;
-  }
-
-  .hr_line{
-    margin-top: 10px;
+  .header_texts {
+    padding: 1em 1.5em;
+    width: 70%;
   }
 
   .feature {
     text-align:center;
   }
 
-  #images {
+  .ul_images {
     text-align:center;
+    flex-direction: column;
   }
 
   img.feature_img {
-    max-width: 100%;
-    min-width: 50%;
+    max-width: 40%;
   }
 
   div.caption {
@@ -138,20 +137,24 @@
     margin-right: auto;
   }
 
-  .header_title {
-    font-size: 3em;
-    margin: 0.5em 30px 0 30px;
+  .header_data {
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .header_logo {
-    margin-top: 12px;
-    margin-left: 30px;
-    height: 72px;
-    width: 72px;
+    width: 30%;
   }
 
-  .title_info {
-    margin: 0.25em 30px;
+  .logo_img {
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  .header_texts {
+    padding: 1em 1.5em;
+    margin: auto 0;
+    width: 70%;
   }
 
   .main_description {
@@ -163,7 +166,7 @@
     margin-left: 2.5em;
   }
 
-  #images {
+  .ul_images {
     text-align:center;
   }
 
@@ -171,7 +174,7 @@
     max-width: 100%;
     min-width: 40%;
   }
-  #images a {
+  .ul_images a {
     max-width: 100%;
   }
 
